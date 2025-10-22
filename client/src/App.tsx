@@ -1,38 +1,63 @@
-import { Toaster } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/NotFound";
+import { lazy, Suspense } from "react";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import Home from "./pages/Home";
+import ScrollToTop from "./components/ScrollToTop";
 
-function Router() {
+// Lazy load des pages pour optimiser le bundle
+const Home = lazy(() => import("./pages/Home"));
+const CommentCaMarche = lazy(() => import("./pages/CommentCaMarche"));
+const APropos = lazy(() => import("./pages/APropos"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Reservation = lazy(() => import("./pages/Reservation"));
+const MenuDecouverte = lazy(() => import("./pages/MenuDecouverte"));
+const MenuClassique = lazy(() => import("./pages/MenuClassique"));
+const MenuHautDeGamme = lazy(() => import("./pages/MenuHautDeGamme"));
+const NosMenus = lazy(() => import("./pages/NosMenus"));
+const Confidentialite = lazy(() => import("./pages/Confidentialite"));
+const MentionsLegales = lazy(() => import("./pages/MentionsLegales"));
+const NotFound = lazy(() => import("./pages/NotFound"));
+
+// Composant de chargement simple
+function LoadingFallback() {
   return (
-    <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
-      <Route component={NotFound} />
-    </Switch>
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="text-center">
+        <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+        <p className="text-muted-foreground">Chargement...</p>
+      </div>
+    </div>
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
+function Router() {
+  return (
+    <Suspense fallback={<LoadingFallback />}>
+      <Switch>
+        <Route path={"/"} component={Home} />
+        <Route path="/comment-ca-marche" component={CommentCaMarche} />
+        <Route path="/nos-menus" component={NosMenus} />
+        <Route path="/a-propos" component={APropos} />
+        <Route path="/menu-decouverte" component={MenuDecouverte} />
+        <Route path="/menu-classique" component={MenuClassique} />
+        <Route path="/menu-hautdegamme" component={MenuHautDeGamme} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/reservation" component={Reservation} />
+        <Route path="/confidentialite" component={Confidentialite} />
+        <Route path="/mentions-legales" component={MentionsLegales} />
+        <Route path={"/404"} component={NotFound} />
+        <Route component={NotFound} />
+      </Switch>
+    </Suspense>
+  );
+}
 
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-        // switchable
-      >
-        <TooltipProvider>
-          <Toaster />
-          <Router />
-        </TooltipProvider>
+      <ThemeProvider defaultTheme="light" switchable>
+        <ScrollToTop />
+        <Router />
       </ThemeProvider>
     </ErrorBoundary>
   );
