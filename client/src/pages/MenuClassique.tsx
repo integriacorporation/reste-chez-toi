@@ -54,7 +54,7 @@ export default function MenuClassique() {
         <section className="relative h-96 overflow-hidden">
           <div className="absolute inset-0">
             <img 
-              src="/ImageClassique.png" 
+              src="/menu-classique.jpg" 
               alt="Menu Classique - Tarte Tatin" 
               className="w-full h-full object-cover"
             />

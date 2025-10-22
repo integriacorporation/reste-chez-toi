@@ -247,7 +247,10 @@ export default function Home() {
 
             <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-8">
               {/* Menu Découverte */}
-              <Card className="border-2 border-border shadow-lg hover:shadow-xl transition-shadow">
+              <Card className="border-2 border-border shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
+                <div className="relative h-48">
+                  <img src="/menu-decouverte.png" alt="Menu Découverte" className="w-full h-full object-cover" />
+                </div>
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold mb-2 text-foreground">Menu Découverte</h3>
                   <p className="text-lg text-muted-foreground mb-4">L'entrée en matière parfaite</p>
@@ -262,7 +265,10 @@ export default function Home() {
               </Card>
 
               {/* Menu Classique */}
-              <Card className="border-2 border-primary shadow-xl hover:shadow-2xl transition-shadow">
+              <Card className="border-2 border-primary shadow-xl hover:shadow-2xl transition-shadow overflow-hidden">
+                <div className="relative h-48">
+                  <img src="/menu-classique.jpg" alt="Menu Classique" className="w-full h-full object-cover" />
+                </div>
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold mb-2 text-foreground">Menu Classique</h3>
                   <p className="text-lg text-muted-foreground mb-4">Notre signature</p>
@@ -277,7 +283,10 @@ export default function Home() {
               </Card>
 
               {/* Menu Haut de Gamme */}
-              <Card className="border-2 border-border shadow-lg hover:shadow-xl transition-shadow">
+              <Card className="border-2 border-border shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
+                <div className="relative h-48">
+                  <img src="/menu-haut-de-gamme.png" alt="Menu Haut de Gamme" className="w-full h-full object-cover" />
+                </div>
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold mb-2 text-foreground">Menu Haut de Gamme</h3>
                   <p className="text-lg text-muted-foreground mb-4">L'expérience ultime</p>

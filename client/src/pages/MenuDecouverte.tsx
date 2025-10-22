@@ -47,7 +47,7 @@ export default function MenuDecouverte() {
         {/* Banner Hero */}
         <section className="relative h-96 overflow-hidden">
           <img 
-            src="/ImageDecouverte.png" 
+            src="/menu-decouverte.png" 
             alt="Menu Découverte" 
             className="absolute inset-0 w-full h-full object-cover"
           />

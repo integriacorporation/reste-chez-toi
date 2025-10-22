@@ -43,7 +43,7 @@ export default function MenuHautDeGamme() {
         {/* Banner Hero */}
         <section className="relative h-96 overflow-hidden">
           <img 
-            src="/ImageHG.png" 
+            src="/menu-haut-de-gamme.png" 
             alt="Menu Haut de Gamme" 
             className="absolute inset-0 w-full h-full object-cover"
           />
