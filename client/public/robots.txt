@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://restecheztoi.com/sitemap.xml
+
