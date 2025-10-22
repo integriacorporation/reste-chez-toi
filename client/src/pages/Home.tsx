@@ -115,13 +115,22 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-bold">Le chef</h2>
             </div>
 
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-6xl mx-auto">
               <Card className="rounded-3xl shadow-2xl overflow-hidden">
-                <CardContent className="p-12">
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                      <ChefHat className="h-10 w-10 text-primary" />
+                <CardContent className="p-0">
+                  <div className="grid md:grid-cols-2 gap-0">
+                    <div className="relative h-96 md:h-auto">
+                      <img 
+                        src="/chef-malik.jpg" 
+                        alt="Chef Malik Horchani" 
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
                     </div>
+                    <div className="p-12">
+                      <div className="flex items-start gap-4 mb-6">
+                        <div className="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                          <ChefHat className="h-10 w-10 text-primary" />
+                        </div>
                     <div>
                       <h3 className="text-3xl font-bold mb-2">Malik Horchani</h3>
                       <p className="text-lg text-primary font-semibold">Cuisine bistronomique & créativité sans frontière</p>
@@ -135,10 +144,12 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Un chef passionné par la cuisine traditionnelle française, qui sait faire parler sa créativité pour franchir les frontières du monde. 
-                    Chaque plat devient une passerelle entre les terroirs d'ici et les saveurs d'ailleurs, mêlant authenticité, modernité et curiosité culinaire.
-                  </p>
+                      <p className="text-lg text-muted-foreground leading-relaxed">
+                        Un chef passionné par la cuisine traditionnelle française, qui sait faire parler sa créativité pour franchir les frontières du monde. 
+                        Chaque plat devient une passerelle entre les terroirs d'ici et les saveurs d'ailleurs, mêlant authenticité, modernité et curiosité culinaire.
+                      </p>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             </div>
