@@ -119,11 +119,11 @@ export default function Home() {
               <Card className="rounded-3xl shadow-2xl overflow-hidden">
                 <CardContent className="p-0">
                   <div className="grid md:grid-cols-2 gap-0">
-                    <div className="relative h-96 md:h-auto">
+                    <div className="relative h-96 md:h-auto bg-muted/20">
                       <img 
                         src="/chef-malik.jpg" 
                         alt="Chef Malik Horchani" 
-                        className="absolute inset-0 w-full h-full object-cover"
+                        className="absolute inset-0 w-full h-full object-contain"
                       />
                     </div>
                     <div className="p-12">
