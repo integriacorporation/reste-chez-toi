@@ -42,9 +42,9 @@ export default function Home() {
         {/* Comment ça marche */}
         <section className="py-20 bg-background">
           <div className="container max-w-7xl">
-            <div className="grid md:grid-cols-3 gap-8 lg:gap-12 items-start">
+            <div className="grid md:grid-cols-3 gap-8 lg:gap-12 items-center">
               {/* Étape 1 */}
-              <Card className="relative rounded-2xl shadow-lg border-2 border-border bg-card">
+              <Card className="relative rounded-2xl shadow-lg border-2 border-border bg-card md:translate-y-0">
                 <div className="absolute -top-4 -left-4 bg-primary text-primary-foreground w-14 h-14 rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
                   1
                 </div>
@@ -137,7 +137,7 @@ export default function Home() {
               </div>
 
               {/* Étape 3 */}
-              <Card className="relative rounded-2xl shadow-lg border-2 border-border bg-card">
+              <Card className="relative rounded-2xl shadow-lg border-2 border-border bg-card md:translate-y-0">
                 <div className="absolute -top-4 -left-4 bg-primary text-primary-foreground w-14 h-14 rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
                   3
                 </div>
