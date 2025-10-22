@@ -42,7 +42,7 @@ export default function Home() {
         {/* Comment ça marche */}
         <section className="py-20 bg-background">
           <div className="container max-w-7xl">
-            <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+            <div className="grid md:grid-cols-3 gap-8 lg:gap-12 items-start">
               {/* Étape 1 */}
               <Card className="relative rounded-2xl shadow-lg border-2 border-border bg-card">
                 <div className="absolute -top-4 -left-4 bg-primary text-primary-foreground w-14 h-14 rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
@@ -73,65 +73,68 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              {/* Étape 2A */}
-              <Card className="relative rounded-2xl shadow-lg border-2 border-border bg-card">
-                <div className="absolute -top-4 -left-4 bg-primary text-primary-foreground w-14 h-14 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
-                  2A
-                </div>
-                <CardContent className="p-8 pt-10">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 mx-auto">
-                    <ChefHat className="h-8 w-8 text-primary" />
+              {/* Colonne centrale avec 2A et 2B empilées */}
+              <div className="space-y-8">
+                {/* Étape 2A */}
+                <Card className="relative rounded-2xl shadow-lg border-2 border-border bg-card">
+                  <div className="absolute -top-4 -left-4 bg-primary text-primary-foreground w-14 h-14 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
+                    2A
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-center text-foreground">Co-créez votre menu</h3>
-                  <p className="text-muted-foreground text-center mb-6">
-                    Travaillez avec votre chef pour créer un menu personnalisé selon vos goûts, allergies et préférences culinaires.
-                  </p>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-3">
-                      <svg className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
-                      <span className="text-sm text-muted-foreground">Échangez directement avec le chef</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                      <span className="text-sm text-muted-foreground">Adaptez les plats à vos préférences</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
-                      <span className="text-sm text-muted-foreground">Signalez allergies et restrictions</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+                  <CardContent className="p-8 pt-10">
+                    <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 mx-auto">
+                      <ChefHat className="h-8 w-8 text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold mb-4 text-center text-foreground">Co-créez votre menu</h3>
+                    <p className="text-muted-foreground text-center mb-6">
+                      Travaillez avec votre chef pour créer un menu personnalisé selon vos goûts, allergies et préférences culinaires.
+                    </p>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-3">
+                        <svg className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                        <span className="text-sm text-muted-foreground">Échangez directement avec le chef</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <svg className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <span className="text-sm text-muted-foreground">Adaptez les plats à vos préférences</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <svg className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                        <span className="text-sm text-muted-foreground">Signalez allergies et restrictions</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
 
-              {/* Étape 2B */}
-              <Card className="relative rounded-2xl shadow-lg border-2 border-border bg-card">
-                <div className="absolute -top-4 -left-4 bg-primary text-primary-foreground w-14 h-14 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
-                  2B
-                </div>
-                <CardContent className="p-8 pt-10">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 mx-auto">
-                    <Utensils className="h-8 w-8 text-primary" />
+                {/* Étape 2B */}
+                <Card className="relative rounded-2xl shadow-lg border-2 border-border bg-card">
+                  <div className="absolute -top-4 -left-4 bg-primary text-primary-foreground w-14 h-14 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
+                    2B
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-center text-foreground">Choisissez un menu</h3>
-                  <p className="text-muted-foreground text-center mb-6">
-                    Ou sélectionnez directement l'un de nos menus prédéfinis. Possibilité de l'ajuster selon vos préférences.
-                  </p>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-3">
-                      <Utensils className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-muted-foreground">Menu Découverte, Classique ou Haut de Gamme</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
-                      <span className="text-sm text-muted-foreground">Personnalisation possible</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
-                      <span className="text-sm text-muted-foreground">Options végétariennes disponibles</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+                  <CardContent className="p-8 pt-10">
+                    <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 mx-auto">
+                      <Utensils className="h-8 w-8 text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold mb-4 text-center text-foreground">Choisissez un menu</h3>
+                    <p className="text-muted-foreground text-center mb-6">
+                      Ou sélectionnez directement l'un de nos menus prédéfinis. Possibilité de l'ajuster selon vos préférences.
+                    </p>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-3">
+                        <Utensils className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <span className="text-sm text-muted-foreground">Menu Découverte, Classique ou Haut de Gamme</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <svg className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                        <span className="text-sm text-muted-foreground">Personnalisation possible</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <svg className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
+                        <span className="text-sm text-muted-foreground">Options végétariennes disponibles</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
 
               {/* Étape 3 */}
               <Card className="relative rounded-2xl shadow-lg border-2 border-border bg-card">
