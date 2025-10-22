@@ -21,7 +21,7 @@ export default function Header() {
       <div className="container flex h-20 items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-3 font-bold text-2xl hover:opacity-80 transition-opacity">
-          <img src="/logo.png" alt="Reste Chez Toi" className="h-12 w-12 rounded-lg" />
+          <img src="/logo.png" alt="Reste Chez Toi" className="h-16 w-16 rounded-lg" />
           <span className="hidden sm:inline">Reste Chez Toi</span>
         </Link>
 
