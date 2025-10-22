@@ -204,9 +204,9 @@ export default function Home() {
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative h-[400px] md:h-auto">
                   <img 
-                    src="/chef.jpg" 
+                    src="/chef-malik.jpg" 
                     alt="Chef Malik Horchani" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain bg-muted"
                   />
                 </div>
                 <CardContent className="p-8 flex flex-col justify-center">
