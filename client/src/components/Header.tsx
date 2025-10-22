@@ -18,17 +18,17 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container flex h-20 items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2 font-bold text-xl hover:opacity-80 transition-opacity">
-          <img src="/logo.webp" alt="Reste Chez Toi" className="h-10 w-10 rounded-lg" />
+        <Link href="/" className="flex items-center space-x-3 font-bold text-2xl hover:opacity-80 transition-opacity">
+          <img src="/logo.webp" alt="Reste Chez Toi" className="h-12 w-12 rounded-lg" />
           <span className="hidden sm:inline">Reste Chez Toi</span>
         </Link>
 
         {/* Navigation Desktop */}
         <nav className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link key={link.href} href={link.href} className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors">
               {link.label}
             </Link>
           ))}
@@ -46,7 +46,7 @@ export default function Header() {
           </Button>
 
           <Link href="/reservation">
-            <Button className="hidden sm:inline-flex rounded-full">Réserver</Button>
+            <Button size="lg" className="hidden sm:inline-flex rounded-full text-base">Réserver</Button>
           </Link>
 
           <Button
