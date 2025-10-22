@@ -253,7 +253,7 @@ export default function Home() {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold mb-2 text-foreground">Menu Découverte</h3>
-                  <p className="text-lg text-muted-foreground mb-4">L'entrée en matière parfaite</p>
+                  <p className="text-lg text-muted-foreground mb-4">L'art de bien commencer.</p>
                   <p className="text-base text-muted-foreground mb-5">Pour découvrir sans vous ruiner</p>
                   <div className="mb-5">
                     <span className="text-4xl font-bold text-primary">130 CHF</span>
@@ -271,7 +271,7 @@ export default function Home() {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold mb-2 text-foreground">Menu Classique</h3>
-                  <p className="text-lg text-muted-foreground mb-4">Notre signature</p>
+                  <p className="text-lg text-muted-foreground mb-4">L'essence de notre savoir-faire.</p>
                   <p className="text-base text-muted-foreground mb-5">Qualité et raffinement garantis</p>
                   <div className="mb-5">
                     <span className="text-4xl font-bold text-primary">200 CHF</span>
