@@ -12,15 +12,15 @@ export default function Home() {
       
       <main className="flex-1">
         {/* Hero Section avec image de fond */}
-        <section className="relative min-h-[550px] flex items-center justify-center">
+        <section className="relative min-h-[700px] flex items-center justify-center">
           {/* Image de fond */}
           <div className="absolute inset-0 overflow-hidden">
             <img 
               src="/hero-bg.jpg" 
               alt="Chef en cuisine" 
-              className="w-full h-full object-cover opacity-25"
+              className="w-full h-full object-cover opacity-40"
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/85 to-background/90" />
+            <div className="absolute inset-0 bg-gradient-to-br from-background/75 via-background/70 to-background/75" />
           </div>
           <div className="container relative z-10 py-16">
             <div className="max-w-5xl mx-auto text-center">
