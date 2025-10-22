@@ -132,9 +132,9 @@ export default function APropos() {
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative">
                   <img 
-                    src="/chef-malik.jpg" 
+                    src="/Imagechef.png" 
                     alt="Chef Malik Horchani" 
-                    className="w-full h-full object-contain bg-muted"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <CardContent className="p-8 flex flex-col justify-center">
