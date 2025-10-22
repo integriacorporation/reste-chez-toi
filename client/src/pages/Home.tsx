@@ -202,7 +202,7 @@ export default function Home() {
 
             <Card className="max-w-5xl mx-auto border-2 border-border shadow-xl overflow-hidden">
               <div className="grid md:grid-cols-2 gap-0">
-                <div className="relative h-[400px] md:h-auto">
+                <div className="relative">
                   <img 
                     src="/chef-malik.jpg" 
                     alt="Chef Malik Horchani" 
