@@ -20,20 +20,16 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
-        <Link href="/">
-          <a className="flex items-center space-x-2 font-bold text-xl hover:opacity-80 transition-opacity">
-            <img src="/logo.webp" alt="Reste Chez Toi" className="h-10 w-10 rounded-lg" />
-            <span className="hidden sm:inline">Reste Chez Toi</span>
-          </a>
+        <Link href="/" className="flex items-center space-x-2 font-bold text-xl hover:opacity-80 transition-opacity">
+          <img src="/logo.webp" alt="Reste Chez Toi" className="h-10 w-10 rounded-lg" />
+          <span className="hidden sm:inline">Reste Chez Toi</span>
         </Link>
 
         {/* Navigation Desktop */}
         <nav className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href}>
-              <a className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-                {link.label}
-              </a>
+            <Link key={link.href} href={link.href} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              {link.label}
             </Link>
           ))}
         </nav>
@@ -70,13 +66,13 @@ export default function Header() {
         <div className="md:hidden border-t">
           <nav className="container py-4 flex flex-col space-y-3">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href}>
-                <a
-                  className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.label}
-                </a>
+              <Link 
+                key={link.href} 
+                href={link.href}
+                className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.label}
               </Link>
             ))}
             <Link href="/reservation">
