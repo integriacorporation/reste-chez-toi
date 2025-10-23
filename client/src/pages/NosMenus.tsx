@@ -29,8 +29,7 @@ export default function NosMenus() {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold mb-2 text-foreground">Menu Découverte</h3>
-                  <p className="text-lg text-muted-foreground mb-4">L'art de bien commencer.</p>
-                  <p className="text-base text-muted-foreground mb-5">Pour découvrir sans vous ruiner</p>
+                  <p className="text-lg text-muted-foreground mb-5">L'art de bien commencer</p>
                   <div className="mb-5">
                     <span className="text-4xl font-bold text-primary">130 CHF</span>
                   </div>
@@ -46,8 +45,7 @@ export default function NosMenus() {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold mb-2 text-foreground">Menu Classique</h3>
-                  <p className="text-lg text-muted-foreground mb-4">L'essence de notre savoir-faire.</p>
-                  <p className="text-base text-muted-foreground mb-5">Qualité et raffinement garantis</p>
+                  <p className="text-lg text-muted-foreground mb-5">L'essence de notre savoir-faire.</p>
                   <div className="mb-5">
                     <span className="text-4xl font-bold text-primary">200 CHF</span>
                   </div>
@@ -63,8 +61,7 @@ export default function NosMenus() {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold mb-2 text-foreground">Menu Haut de Gamme</h3>
-                  <p className="text-lg text-muted-foreground mb-4">L'expérience ultime</p>
-                  <p className="text-base text-muted-foreground mb-5">Quand on sort le grand jeu</p>
+                  <p className="text-lg text-muted-foreground mb-5">Quand on sort le grand jeu</p>
                   <div className="mb-5">
                     <span className="text-4xl font-bold text-primary">280 CHF</span>
                   </div>
