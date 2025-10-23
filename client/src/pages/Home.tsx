@@ -223,7 +223,7 @@ export default function Home() {
                         <Star key={star} className="w-5 h-5 fill-primary text-primary" />
                       ))}
                     </div>
-                    <span className="text-base text-muted-foreground">247 avis</span>
+                    <span className="text-base text-muted-foreground">17 avis</span>
                   </div>
                   <p className="text-lg text-muted-foreground leading-relaxed">
                     Un chef passionné par la cuisine traditionnelle française, qui sait faire parler sa créativité pour franchir les frontières du monde. Chaque plat devient une passerelle entre les terroirs d'ici et les saveurs d'ailleurs, mêlant authenticité, modernité et curiosité culinaire.
@@ -333,7 +333,7 @@ export default function Home() {
             {/* Statistiques */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center">
-                <div className="text-5xl font-bold text-primary mb-2">50+</div>
+                <div className="text-5xl font-bold text-primary mb-2">+20</div>
                 <div className="text-lg text-muted-foreground">Clients satisfaits</div>
               </div>
               <div className="text-center">
@@ -341,11 +341,11 @@ export default function Home() {
                 <div className="text-lg text-muted-foreground">Chef expert</div>
               </div>
               <div className="text-center">
-                <div className="text-5xl font-bold text-primary mb-2">4.9</div>
+                <div className="text-5xl font-bold text-primary mb-2">4.8</div>
                 <div className="text-lg text-muted-foreground">Note moyenne</div>
               </div>
               <div className="text-center">
-                <div className="text-5xl font-bold text-primary mb-2">247</div>
+                <div className="text-5xl font-bold text-primary mb-2">17</div>
                 <div className="text-lg text-muted-foreground">Avis clients</div>
               </div>
             </div>

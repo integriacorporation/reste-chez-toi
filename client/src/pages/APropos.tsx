@@ -35,7 +35,7 @@ export default function APropos() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
               <div className="text-center">
-                <div className="text-5xl font-bold text-primary mb-2">50+</div>
+                <div className="text-5xl font-bold text-primary mb-2">+20</div>
                 <div className="text-lg text-muted-foreground">Clients satisfaits</div>
               </div>
               <div className="text-center">
@@ -43,11 +43,11 @@ export default function APropos() {
                 <div className="text-lg text-muted-foreground">Chef expert</div>
               </div>
               <div className="text-center">
-                <div className="text-5xl font-bold text-primary mb-2">4.9</div>
+                <div className="text-5xl font-bold text-primary mb-2">4.8</div>
                 <div className="text-lg text-muted-foreground">Note moyenne</div>
               </div>
               <div className="text-center">
-                <div className="text-5xl font-bold text-primary mb-2">247</div>
+                <div className="text-5xl font-bold text-primary mb-2">17</div>
                 <div className="text-lg text-muted-foreground">Avis clients</div>
               </div>
             </div>
@@ -146,7 +146,7 @@ export default function APropos() {
                         <Star key={star} className="w-5 h-5 fill-primary text-primary" />
                       ))}
                     </div>
-                    <span className="text-base text-muted-foreground">247 avis</span>
+                    <span className="text-base text-muted-foreground">17 avis</span>
                   </div>
                   <p className="text-base text-muted-foreground">Note 5/5</p>
                   <p className="text-lg text-muted-foreground leading-relaxed mt-4">
